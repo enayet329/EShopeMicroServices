@@ -1,0 +1,13 @@
+@Catalog_Base_Url = http://localhost:5000
+
+# Create a new product
+POST {{Catalog_Base_Url}}/products
+Content-Type: application/json
+
+{
+  "name": "New Product",
+  "description": "This is a new product.",
+  "price": 19.99,
+  "category": ["Electronics"],
+  "imageFile": "Image File Product A"
+}
