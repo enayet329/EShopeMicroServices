@@ -7,7 +7,7 @@ POST {{BaseUrl}}/products
 Content-Type: application/json
 
 {
-  "name": "Example Product",
+  "name": "",
   "description": "This is a great product.",
   "price": 99.99,
   "category": [

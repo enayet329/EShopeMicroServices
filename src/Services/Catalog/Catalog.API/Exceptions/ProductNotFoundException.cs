@@ -1,4 +1,4 @@
-﻿namespace Catalog.API.Exception;
+﻿namespace Catalog.API.Exceptions;
 
 public class ProductNotFoundException : ApplicationException
 {
