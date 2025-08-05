@@ -14,3 +14,7 @@ Content-Type: application/json
   ],
   "imageFile": "example-image.png"
 }
+
+### Get all products
+GET {{BaseUrl}}/products
+Accept: application/json
