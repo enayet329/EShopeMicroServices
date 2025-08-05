@@ -1,0 +1,16 @@
+@BaseUrl = https://localhost:5050
+
+### Create product
+POST {{BaseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "Example Product",
+  "description": "This is a great product.",
+  "price": 99.99,
+  "category": [
+    "electronics",
+    "gadgets"
+  ],
+  "imageFile": "example-image.png"
+}
