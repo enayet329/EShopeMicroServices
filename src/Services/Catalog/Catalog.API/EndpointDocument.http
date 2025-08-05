@@ -1,5 +1,5 @@
 @BaseUrl = https://localhost:5050
-@productId = 00000000-0000-0000-0000-000000000000
+@productId = 01987978-9dac-467f-9ec1-8abae18695e1
 @productCategory = electronics
 
 ### Create product
@@ -28,3 +28,19 @@ Accept: application/json
 ### Get products by category
 GET {{BaseUrl}}/products/{{productCategory}}
 Accept: application/json
+
+### Update product
+PUT {{BaseUrl}}/products
+Content-Type: application/json
+
+{
+  "id": "{{productId}}",
+  "name": "Updated Example Product Name",
+  "description": "This product has been updated.",
+  "price": 129.99,
+  "category": [
+    "electronics",
+    "updated-gadgets"
+  ],
+  "imageFile": "updated-image.png"
+}
