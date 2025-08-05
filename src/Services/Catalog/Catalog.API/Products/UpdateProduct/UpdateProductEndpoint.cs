@@ -19,7 +19,7 @@ public class UpdateProductEndpoint : ICarterModule
 				var product = request.Adapt<UpdateProductCommand>();
 				var result = await sender.Send(product);
 
-				return new UpdateProductResponse(result.IsSuccess);
+				return Results.Ok(new UpdateProductResponse(result.IsSuccess));
 			})
 			.WithName("UpdateProduct")
 			.Produces<UpdateProductResponse>()
