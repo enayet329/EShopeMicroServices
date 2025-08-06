@@ -2,7 +2,7 @@
 
 public record StoreBasketCommand(ShoppingtCart Cart) : ICommand<StoreBasketResult>;
 
-public record StoreBasketResult(bool IsSuccess);
+public record StoreBasketResult(string UserName);
 
 public class StoreBasketCommandValidator : AbstractValidator<StoreBasketCommand>
 {
@@ -24,6 +24,6 @@ public class StoreBasketCommandHandler : ICommandHandler<StoreBasketCommand, Sto
 		// TODO: Implement the logic to store the shopping cart.	
 		// This could involve saving the cart to a database or an external service.
 		// and Update cash
-		return new StoreBasketResult(true);
+		return new StoreBasketResult("true");
 	}
 }

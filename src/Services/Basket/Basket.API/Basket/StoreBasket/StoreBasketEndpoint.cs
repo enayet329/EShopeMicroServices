@@ -3,7 +3,7 @@
 
 public record StoreBasketRequest(ShoppingtCart Cart);
 
-public record StoreBasketResponse(bool IsSuccess);
+public record StoreBasketResponse(string UserName);
 
 public class StoreBasketEndpoint : ICarterModule
 {
