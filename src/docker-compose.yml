@@ -1,6 +1,6 @@
 
 services:
-  Catalogdb:
+  catalogdb:
     image: postgres
     
 

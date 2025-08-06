@@ -1,5 +1,5 @@
-@BaseUrl = https://localhost:5050
-@productId = 01987aa3-db9f-4296-b1d3-9d9cc553812e
+@BaseUrl = https://localhost:6060
+@productId = 5334c996-8457-4cf0-815c-ed2b77c4ff61
 @productCategory = gadgets
 
 ### Create product
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Get all products
-GET {{BaseUrl}}/products?pageNumber=1&pageSize=1
+GET {{BaseUrl}}/products?pageNumber=1&pageSize=10
 Accept: application/json
 
 ### Get product by ID
