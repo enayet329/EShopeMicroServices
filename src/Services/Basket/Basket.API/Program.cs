@@ -21,6 +21,8 @@ builder.Services.AddMarten(opts =>
 			.Identity(x => x.UserName);
 }).UseLightweightSessions();
 
+builder.Services.AddValidatorsFromAssembly(assembly);
+
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
 
 var app = builder.Build();
