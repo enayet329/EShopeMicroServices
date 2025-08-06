@@ -17,13 +17,12 @@ public class StoreBasketCommandValidator : AbstractValidator<StoreBasketCommand>
 	}
 }
 
-public class StoreBasketCommandHandler : ICommandHandler<StoreBasketCommand, StoreBasketResult>
+public class StoreBasketCommandHandler(IBasketRepository repository) : ICommandHandler<StoreBasketCommand, StoreBasketResult>
 {
-	public async Task<StoreBasketResult> Handle(StoreBasketCommand request, CancellationToken cancellationToken)
+	public async Task<StoreBasketResult> Handle(StoreBasketCommand command, CancellationToken cancellationToken)
 	{
-		// TODO: Implement the logic to store the shopping cart.	
-		// This could involve saving the cart to a database or an external service.
-		// and Update cash
-		return new StoreBasketResult("true");
+		await repository.StoreBasket(command.Cart, cancellationToken);
+		
+		return new StoreBasketResult(command.Cart.UserName);
 	}
 }
