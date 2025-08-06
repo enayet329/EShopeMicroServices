@@ -5,6 +5,8 @@ global using Marten;
 global using FluentValidation; 
 global using Marten.Schema;
 global using Marten.Pagination;
+global using HealthChecks.UI.Client;
+global using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 global using BuildingBlocks.CQRS;
 global using Catalog.API.Models;
 global using Catalog.API.Exceptions;
