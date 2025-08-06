@@ -1,0 +1,33 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@BaseUrl = https://localhost:5051
+@userName = swn 
+
+###
+# @name GetBasket
+GET {{BaseUrl}}/basket/{{userName}}
+Content-Type: application/json
+
+###
+# @name StoreBasket
+POST {{BaseUrl}}/basket/{{userName}}
+Content-Type: application/json
+
+{
+  "cart": {
+    "userName": "{{userName}}",
+    "items": [
+      {
+        "productId": "660c07c2-7b2c-4b8a-8c7e-9f0a2b1c3d4e",
+        "productName": "Example Product",
+        "quantity": 1,
+        "price": 10.50
+      }
+    ]
+  }
+}
+
+###
+# @name DeleteBasket
+DELETE {{BaseUrl}}/basket/{{userName}}
+Content-Type: application/json
