@@ -1,5 +1,7 @@
 
 
+using BuildingBlocks.Exceptions.Handler;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -24,6 +26,7 @@ builder.Services.AddMarten(opts =>
 builder.Services.AddValidatorsFromAssembly(assembly);
 
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 
 var app = builder.Build();
 
@@ -31,5 +34,6 @@ var app = builder.Build();
 
 
 app.MapCarter();
+app.UseExceptionHandler(options => { });
 
 app.Run();

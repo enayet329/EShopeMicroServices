@@ -1,3 +1,4 @@
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -26,6 +27,9 @@ if (builder.Environment.IsDevelopment())
 
 builder.Services.AddHealthChecks()
 	 .AddNpgSql(builder.Configuration.GetConnectionString("Database")!);
+
+
+builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 
 var app = builder.Build();
 
