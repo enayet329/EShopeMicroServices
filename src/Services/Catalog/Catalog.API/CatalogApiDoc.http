@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Get all products
-GET {{BaseUrl}}/products
+GET {{BaseUrl}}/products?pageNumber=1&pageSize=1
 Accept: application/json
 
 ### Get product by ID
