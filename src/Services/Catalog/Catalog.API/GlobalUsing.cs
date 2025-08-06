@@ -13,3 +13,4 @@ global using Catalog.API.Exceptions;
 global using BuildingBlocks.Behaviors;
 global using Catalog.API.Data;
 global using Microsoft.AspNetCore.Mvc;
+global using BuildingBlocks.Exceptions;
