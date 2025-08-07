@@ -10,5 +10,6 @@ global using Basket.API.Basket.StoreBaskt;
 global using BuildingBlocks.Exceptions;
 global using Basket.API.Exceptions;
 global using Basket.API.Data;
+global using BuildingBlocks.Exceptions.Handler;
 
 
