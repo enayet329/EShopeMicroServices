@@ -16,6 +16,9 @@ services:
       context: .
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
 
+
+
 volumes:
   postgres_catalog:
   postgres_basket:
+
