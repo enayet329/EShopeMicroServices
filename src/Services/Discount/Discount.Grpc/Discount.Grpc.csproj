@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.60.0" />
+    <PackageReference Include="Mapster" Version="7.4.2-pre02" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.19" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.19">
       <PrivateAssets>all</PrivateAssets>
