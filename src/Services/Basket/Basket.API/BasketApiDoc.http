@@ -21,7 +21,7 @@ Content-Type: application/json
       {
         "quantity": 1,
         "color": "Red",
-        "price": 10.50,
+        "price": 1000,
         "productId": "660c07c2-7b2c-4b8a-8c7e-9f0a2b1c3d4e",
         "productName": "Example Product"
       }
