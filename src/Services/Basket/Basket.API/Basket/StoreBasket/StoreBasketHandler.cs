@@ -1,6 +1,4 @@
-﻿using Discount.Grpc;
-
-namespace Basket.API.Basket.StoreBaskt;
+﻿namespace Basket.API.Basket.StoreBaskt;
 
 public record StoreBasketCommand(ShoppingtCart Cart) : ICommand<StoreBasketResult>;
 
